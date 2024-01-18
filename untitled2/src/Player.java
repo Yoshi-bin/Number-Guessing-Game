@@ -36,7 +36,7 @@ public class Player implements Serializable {
     }
 
     public int getBestScoreForModeAndDifficulty(String mode, String difficulty) {
-        return bestScoresByModeAndDifficulty.getOrDefault(mode + "_" + difficulty, Integer.MAX_VALUE);
+        return bestScoresByModeAndDifficulty.getOrDefault(mode + "_" + difficulty, 0);
     }
 
     public Map<String, Integer> getBestScoresByModeAndDifficulty() {
