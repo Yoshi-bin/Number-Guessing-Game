@@ -1,0 +1,12 @@
+Standard_Easy Best Score: 11
+Standard_Normal Best Score: 2147483647
+Standard_Hard Best Score: 2147483647
+Reverse_Easy Best Score: 2147483647
+Reverse_Normal Best Score: 2147483647
+Reverse_Hard Best Score: 2147483647
+Mixed_Easy Best Score: 2147483647
+Mixed_Normal Best Score: 2147483647
+Mixed_Hard Best Score: 2147483647
+General Best Score: 0
+Current Score: 0
+Nickname: okay
