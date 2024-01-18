@@ -212,7 +212,7 @@ public class GuessingNumberGame {
 					System.out.println("Program says: Too high!");
 				}
 			}
-			playerTurn = !playerTurn;
+			playerTurn = !playerTurn; // switch player turn
 		}
 	}
 
