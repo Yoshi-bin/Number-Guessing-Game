@@ -213,7 +213,6 @@ public class GuessingNumberGame {
 				}
 			}
 			playerTurn = !playerTurn;
-			
 		}
 	}
 
@@ -222,7 +221,7 @@ public class GuessingNumberGame {
 		int playerGuess;
 		int score = 0;
 		boolean isGameOver = false;
-		
+
 		do {
 			score++;
 			for (Iterator<Player> iterator = players.iterator(); iterator.hasNext();) {
@@ -231,8 +230,8 @@ public class GuessingNumberGame {
 				System.out.print("Your turn " + player.getNickname() + ", guess the number: ");
 				playerGuess = scanner.nextInt();
 				if (playerGuess == numberToGuess) {
-					System.out.println("Congratulations! " + player.getNickname() 
-					+ " guessed the number. Game is over!");
+					System.out
+							.println("Congratulations! " + player.getNickname() + " guessed the number. Game is over!");
 					player.setBestScoreForModeAndDifficulty("Mixed", difficulty, score);
 					updatePlayerScoreInFile(player, "Mixed");
 					isGameOver = true;
@@ -275,12 +274,11 @@ public class GuessingNumberGame {
 			System.out.println("Error updating data: " + e.getMessage());
 		}
 	}
-	
 
 	private void savePlayerData(Player player) {
 		try (PrintWriter out = new PrintWriter(new FileOutputStream(player.getNickname() + ".txt"))) {
-			String[] modes = { "Standard", "Reverse", "Mixed"};
-			String[] difficulties = { "Easy", "Normal", "Hard", "Custom"};
+			String[] modes = { "Standard", "Reverse", "Mixed" };
+			String[] difficulties = { "Easy", "Normal", "Hard", "Custom" };
 
 			for (String mode : modes) {
 				for (String difficulty : difficulties) {
